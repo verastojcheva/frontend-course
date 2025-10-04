@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Metrics Dashboard — Metrics</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="./">PM Dashboard</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="./metrics.html" aria-current="page">Metrics</a>
+            <a href="./insights.html">Insights</a>
+            <a href="./about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Metrics</h1>
+        <p class="muted">Key KPIs grouped by purpose.</p>
+
+        <h2>Product Usage</h2>
+        <section class="kpi-grid">
+            <article class="kpi">
+                <header>Daily Active Users (DAU)</header>
+                <div class="value">13,890</div>
+                <div class="delta up">+3.4% MoM</div>
+                <p class="note">Engagement depth.</p>
+            </article>
+
+            <article class="kpi">
+                <header>Stickiness (DAU / MAU)</header>
+                <div class="value">28%</div>
+                <div class="delta up">+1pp</div>
+                <p class="note">Habit strength.</p>
+            </article>
+
+            <article class="kpi">
+                <header>Time to Value (TTV)</header>
+                <div class="value">12 min</div>
+                <div class="delta down">−3 min</div>
+                <p class="note">Speed to first “aha.”</p>
+            </article>
+
+            <article class="kpi">
+                <header>D1 Retention</header>
+                <div class="value">30%</div>
+                <div class="delta flat">±0pp</div>
+                <p class="note">Next-day return rate.</p>
+            </article>
+        </section>
+
+        <!-- Conversion -->
+        <h2>Conversion</h2>
+        <section class="kpi-grid">
+            <article class="kpi">
+                <header>Activation Rate</header>
+                <div class="value">39%</div>
+                <div class="delta up">+2pp</div>
+                <p class="note">Signups reaching the key action.</p>
+            </article>
+
+            <article class="kpi">
+                <header>Free → Paid Conversion</header>
+                <div class="value">5.4%</div>
+                <div class="delta up">+0.2pp</div>
+                <p class="note">Upgrade rate.</p>
+            </article>
+        </section>
+
+        <h2>Customer Sentiment</h2>
+        <section class="kpi-grid">
+            <article class="kpi">
+                <header>NPS</header>
+                <div class="value">34</div>
+                <div class="delta up">+4</div>
+                <p class="note">Promoters − detractors.</p>
+            </article>
+
+            <article class="kpi">
+                <header>CSAT</header>
+                <div class="value">4.3 / 5</div>
+                <div class="delta flat">±0.0</div>
+                <p class="note">Post-interaction rating.</p>
+            </article>
+        </section>
+
+
+        <h2>Revenue &amp; Growth</h2>
+        <section class="kpi-grid">
+            <article class="kpi">
+                <header>North Star Metric</header>
+                <div class="value">2.1 actions/user</div>
+                <div class="delta up">+0.1</div>
+                <p class="note">Primary value moment.</p>
+            </article>
+
+            <article class="kpi">
+                <header>Monthly Revenue (MRR)</header>
+                <div class="value">$9,010</div>
+                <div class="delta up">+10.5%</div>
+                <p class="note">Recurring revenue.</p>
+            </article>
+
+            <article class="kpi">
+                <header>Churn (Monthly)</header>
+                <div class="value">4.2%</div>
+                <div class="delta down">−0.3pp</div>
+                <p class="note">Customers lost.</p>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>Notes</h2>
+            <ul>
+                <li>Activation and DAU rising → continue onboarding iterations.</li>
+                <li>Stickiness + D1 indicate habit strength; focus on week-1 loops.</li>
+                <li>TTV dropping → keep FTUX checklist tests.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

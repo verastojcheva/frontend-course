@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Metrics Dashboard — About</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="./">PM Dashboard</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="./metrics.html">Metrics</a>
+            <a href="./insights.html">Insights</a>
+            <a href="./about.html" aria-current="page">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>About this Dashboard</h1>
+
+        <section class="panel">
+            <h2>Purpose</h2>
+            <p>A compact view of product health for a SaaS/app: engagement, activation, retention, conversion, sentiment, and revenue.</p>
+        </section>
+
+        <div class="two-col">
+            <section class="panel">
+                <h2>Who it’s for</h2>
+                <ul>
+                    <li><strong>PMs / Product Analysts</strong> — weekly reviews & prioritization.</li>
+                    <li><strong>Founders & Leads</strong> — quick status without BI tools.</li>
+                    <li><strong>Stakeholders</strong> — shared snapshot for discussion.</li>
+                </ul>
+            </section>
+
+            <section class="panel">
+                <h2>When to use</h2>
+                <ul>
+                    <li>Weekly product reviews & roadmap updates.</li>
+                    <li>Before sprint planning to pick focus areas.</li>
+                    <li>After launches/experiments to check movement.</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="panel">
+            <h2>What’s shown</h2>
+            <div class="two-col">
+                <section>
+                    <h3>Product Usage</h3>
+                    <ul>
+                        <li><strong>DAU</strong> — daily active users.</li>
+                        <li><strong>Stickiness (DAU/MAU)</strong> — habit strength.</li>
+                        <li><strong>Time to Value (TTV)</strong> — speed to first “aha”.</li>
+                        <li><strong>D1 Retention</strong> — next-day return rate.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Conversion</h3>
+                    <ul>
+                        <li><strong>Activation Rate</strong> — % reaching the key action.</li>
+                        <li><strong>Free → Paid</strong> — upgrade rate.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="two-col">
+                <section>
+                    <h3>Customer Sentiment</h3>
+                    <ul>
+                        <li><strong>NPS</strong> — promoters minus detractors.</li>
+                        <li><strong>CSAT</strong> — 1–5 post-interaction rating.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Revenue & Growth</h3>
+                    <ul>
+                        <li><strong>North Star Metric</strong> — core value action per user.</li>
+                        <li><strong>MRR</strong> — recurring revenue.</li>
+                        <li><strong>Churn</strong> — % customers lost per month.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-tabs" role="tablist">
+                <button class="active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button data-filter="getting-started" role="tab" aria-selected="false">Getting Started</button>
+                <button data-filter="pricing" role="tab" aria-selected="false">Pricing</button>
+            </div>
+
+            <div class="faq-list">
+                <article class="faq-item" data-category="getting-started">
+                    <h3 class="faq-q">How do I read the dashboard quickly?</h3>
+                    <div class="faq-a">
+                        Start with your current goal (e.g., activation), then scan that group’s deltas for direction before digging into absolute values.
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="getting-started">
+                    <h3 class="faq-q">What’s the difference between DAU and Stickiness?</h3>
+                    <div class="faq-a">
+                        DAU is total daily users; Stickiness is DAU divided by MAU — a sense of habit strength across the month.
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="pricing">
+                    <h3 class="faq-q">How should I interpret free → paid conversion?</h3>
+                    <div class="faq-a">
+                        Track changes after pricing or plan clarity tests. Pair with activation to ensure you’re not trading adoption for revenue.
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="pricing">
+                    <h3 class="faq-q">Does churn include trial cancellations?</h3>
+                    <div class="faq-a">
+                        In this demo, churn reflects paying customers. Trials are monitored separately under activation and conversion.
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

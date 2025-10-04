@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Metrics Dashboard — Insights</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="./">PM Dashboard</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="./metrics.html">Metrics</a>
+            <a href="./insights.html" aria-current="page">Insights</a>
+            <a href="./about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Insights</h1>
+        <p class="muted">Experiment ideas and actions.</p>
+
+        <section class="insights-wrap">
+            <article class="insight-card">
+                <h3>Onboarding FTUX</h3>
+                <ul>
+                    <li>Metric: Activation Rate</li>
+                    <li>Expectation: +2–3pp</li>
+                    <li>Plan: A/B test with 50/50 split</li>
+                </ul>
+                <span class="pill positive">Priority: High</span>
+                <p class="note"><strong>If Activation ↓:</strong> audit first-run steps; simplify permissions; add “skip”.</p>
+            </article>
+
+            <article class="insight-card">
+                <h3>Pricing Page Clarity</h3>
+                <ul>
+                    <li>Metric: Free→Paid Conversion</li>
+                    <li>Expectation: +0.2–0.5pp</li>
+                    <li>Plan: 3 plans + comparison</li>
+                </ul>
+                <span class="pill neutral">Priority: Medium</span>
+                <p class="note"><strong>If Conversion ↓:</strong> highlight “most popular”, simplify copy, move FAQs up.</p>
+            </article>
+
+            <article class="insight-card">
+                <h3>Cancellation Survey</h3>
+                <ul>
+                    <li>Metric: Monthly Churn</li>
+                    <li>Expectation: −0.2–0.5pp</li>
+                    <li>Plan: Pause + discount test</li>
+                </ul>
+                <span class="pill positive">Priority: High</span>
+                <p class="note"><strong>If Churn ↑:</strong> segment by reason; quick “pause” path; benefit recap.</p>
+            </article>
+
+            <article class="insight-card">
+                <h3>Habit Reminders</h3>
+                <ul>
+                    <li>Metric: D1/D7 Retention</li>
+                    <li>Expectation: +1–2pp</li>
+                    <li>Plan: Email + in-app reminders</li>
+                </ul>
+                <span class="pill neutral">Priority: Medium</span>
+                <p class="note"><strong>If D1/D7 ↓:</strong> adjust timing; cap frequency; personalize by last action.</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Metrics Dashboard — Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="./">PM Dashboard</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="./metrics.html">Metrics</a>
+            <a href="./insights.html">Insights</a>
+            <a href="./about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container page-home">
+        <section class="hero">
+            <h1>Product Metrics Dashboard</h1>
+            <div class="hero-actions">
+                <a class="btn" href="./metrics.html">View Metrics</a>
+                <a class="btn secondary" href="./insights.html">Read Insights</a>
+            </div>
+        </section>
+
+        <section class="cards-grid">
+            <a class="card" href="./metrics.html">
+                <h3>Metrics</h3>
+                <p>Core KPIs grouped by purpose.</p>
+            </a>
+            <a class="card" href="./insights.html">
+                <h3>Insights</h3>
+                <p>Experiments and next steps.</p>
+            </a>
+            <a class="card" href="./about.html">
+                <h3>About</h3>
+                <p>Purpose, audience, and how to read it.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <section>
+                <div class="newsletter-card">
+                    <h3>Subscribe to Newsletter</h3>
+                    <p>Get quick product metrics tips.</p>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                    <p class="newsletter-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+                </div>
+                <div class="social">
+                    <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+                    <a href="#" aria-label="Twitter" title="Twitter">t</a>
+                </div>
+            </section>
+
+            <section class="footer-col">
+                <h4 class="footer-title">Company</h4>
+                <nav class="footer-links">
+                    <a href="./about.html">About</a>
+                    <!-- disabled footer links -->
+                    <a href="#" class="disabled-link" aria-disabled="true" tabindex="-1">Process</a>
+                    <a href="#" class="disabled-link" aria-disabled="true" tabindex="-1">Join Our Team</a>
+                </nav>
+            </section>
+
+            <section class="footer-col">
+                <h4 class="footer-title">Resources</h4>
+                <nav class="footer-links">
+                    <a href="./metrics.html">Dashboards</a>
+                    <a href="./insights.html">Experiments</a>
+                    <a href="./about.html#faq">FAQ</a>
+                </nav>
+            </section>
+
+            <section class="footer-col">
+                <h4 class="footer-title">Contact</h4>
+                <nav class="footer-links">
+                    <a href="mailto:hello@example.com">hello@example.com</a>
+                </nav>
+            </section>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span id="yearNow"></span> PM Dashboard</span>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
